@@ -1,10 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5062/api', // Reemplaza con tu URL de backend
-  headers: {
-    'Content-Type': 'application/json'
-  }
+  // Usa la IP de tu máquina + puerto de la API
+  baseURL: 'http://192.168.0.109:5062/api', // Reemplaza con tu IP
 });
 
 export const authService = {
